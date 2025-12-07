@@ -59,6 +59,11 @@ app.get('/food/:id', async (req, res) => {
   const foundFood = await food.findById(id)
   res.render('showFood.ejs', { foundFood })
 })
+
+get.get('/food/:id/edit', async(req,res)=>{
+
+
+})
 app.listen(3000, () => {
   console.log('App is running on port 3000')
 }) // app will be waiting for requests on port 3000
